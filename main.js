@@ -43,35 +43,77 @@ val = s.substring(0, 5);
 // Split into array
 val = s.split("");
 
-// Objects
+// ARRAYS - Store multiple values in a variable
+const numbers = [1, 2, 3, 4, 5];
+const fruits = ["apples", "oranges", "pears", "grapes"];
+console.log(numbers, fruit);
+
+// Get one value - Arrays start at 0
+console.log(fruits[1]);
+
+// Add value
+fruits[4] = "blueberries";
+
+// Add value using push()
+fruits.push("strawberries");
+
+// Add to beginning
+fruits.unshift("mangos");
+
+// Remove last value
+fruits.pop();
+
+// // Check if array
+console.log(Array.isArray(fruits));
+
+// // Get index
+console.log(fruits.indexOf("oranges"));
+
+// OBJECT LITERALS
 const person = {
   firstName: "John",
-  lastName: "Doe",
-  age2: 30,
+  age: 30,
   hobbies: ["music", "movies", "sports"],
   address: {
-    street: "50 main st",
+    street: "50 Main st",
     city: "Boston",
     state: "MA",
   },
 };
 
+// Get single value
+console.log(person.name);
+
+// Get array value
+console.log(person.hobbies[1]);
+
+// Get embedded object
+console.log(person.address.city);
+
+// Add property
+person.email = "jdoe@gmail.com";
+
+// Array of objects
 const todos = [
   {
     id: 1,
     text: "Take out trash",
-    isCompleted: true,
+    isComplete: false,
   },
   {
     id: 2,
-    text: "Meeting with boss",
-    isCompleted: true,
+    text: "Dinner with wife",
+    isComplete: false,
   },
   {
     id: 3,
-    text: "Dentist appt",
-    isCompleted: true,
+    text: "Meeting with boss",
+    isComplete: true,
   },
 ];
 
+// Get specific object value
 console.log(todos[1].text);
+
+// Format as JSON
+console.log(JSON.stringify(todos));
