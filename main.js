@@ -142,3 +142,24 @@ for (let i = 0; i < todos.length; i++) {
 for (let todo of todos) {
   console.log(todo.text);
 }
+
+// HIGH ORDER ARRAY METHODS (show prototype)
+
+// forEach() - Loops through array
+todos.forEach(function (todo, i, myTodos) {
+  console.log(`${i + 1}: ${todo.text}`);
+  console.log(myTodos);
+});
+
+// map() - Loop through and create new array
+const todoTextArray = todos.map(function (todo) {
+  return todo.text;
+});
+
+console.log(todoTextArray);
+
+// filter() - Returns array based on condition
+const todo1 = todos.filter(function (todo) {
+  // Return only todos where id is 1
+  return todo.id === 1;
+});
