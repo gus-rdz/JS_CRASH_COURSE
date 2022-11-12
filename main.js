@@ -12,13 +12,13 @@ let age = 30;
 age = 31;
 
 // DATA TYPES - String, Number, Boolean, null, undefined
-const name = "Brad";
-const age3 = 37;
-const rating = 3.5;
-const isCool = true;
-const x = null;
-const y = undefined;
-let z; // undefined
+// const name = "Brad";
+// const age3 = 37;
+// const rating = 3.5;
+// const isCool = true;
+// const x = null;
+// const y = undefined;
+// let z; // undefined
 
 // Check type
 console.log(typeof z);
@@ -163,3 +163,31 @@ const todo1 = todos.filter(function (todo) {
   // Return only todos where id is 1
   return todo.id === 1;
 });
+
+// CONDITIONALS
+
+// Simple If/Else Statement
+const x = 30;
+
+if (x === 10) {
+  console.log("x is 10");
+} else if (x > 10) {
+  console.log("x is greater than 10");
+} else {
+  console.log("x is less than 10");
+}
+
+// Switch
+color = "blue";
+
+switch (color) {
+  case "red":
+    console.log("color is red");
+  case "blue":
+    console.log("color is blue");
+  default:
+    console.log("color is not red or blue");
+}
+
+// Ternary operator / Shorthand if
+const z = color === "red" ? 10 : 20;
