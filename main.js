@@ -241,3 +241,9 @@ console.log(person2);
 
 // console.log(person1.getBirthYear());
 // console.log(person1.getFullName());
+
+// Built in constructors
+const name = new String("Kevin");
+console.log(typeof name); // Shows 'Object'
+const num = new Number(5);
+console.log(typeof num); // Shows 'Object'
