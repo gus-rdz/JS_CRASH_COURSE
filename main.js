@@ -234,7 +234,7 @@ Person.prototype.getFullName = function () {
 };
 
 // Instantiate an object from the class
-const person1 = new Person("John", "Doe", "7-8-80");
+// const person1 = new Person("John", "Doe", "7-8-80");
 const person2 = new Person("Steve", "Smith", "8-2-90");
 
 console.log(person2);
@@ -247,3 +247,25 @@ const name = new String("Kevin");
 console.log(typeof name); // Shows 'Object'
 const num = new Number(5);
 console.log(typeof num); // Shows 'Object'
+
+// ES6 CLASSES
+class Person {
+  constructor(firstName, lastName, dob) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.dob = new Date(dob);
+  }
+
+  // Get Birth Year
+  getBirthYear() {
+    return this.dob.getFullYear();
+  }
+
+  // Get Full Name
+  getFullName() {
+    return `${this.firstName} ${this.lastName}`;
+  }
+}
+
+const person1 = new Person("John", "Doe", "7-8-80");
+console.log(person1.getBirthYear());
