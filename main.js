@@ -460,3 +460,37 @@
 // console.log(leapyear(1700));
 // console.log(leapyear(1800));
 // console.log(leapyear(100));
+
+// Recursion
+// function factorial(x) {
+//   if (x === 0) {
+//     return 1;
+//   }
+//   return x * factorial(x - 1);
+// }
+// console.log(factorial(5));
+
+// var gcd = function (a, b) {
+//   if (!b) {
+//     return a;
+//   }
+
+//   return gcd(b, a % b);
+// };
+// console.log(gcd(2154, 458));
+
+// var range = function(start_num, end_num)
+// {
+//   if (end_num - start_num === 2)
+//   {
+//     return [start_num + 1];
+//   }
+//   else
+//   {
+//     var list = range(start_num, end_num - 1);
+//     list.push(end_num - 1);
+//     return list;
+//   }
+// };
+
+// console.log(range(2,9));
