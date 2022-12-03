@@ -550,3 +550,27 @@
 // }
 // cToF(60);
 // fToC(45);
+
+// Number Functions
+// function same_last_digit(p, q, r) {
+//   return p % 10 === q % 10 || p % 10 === r % 10 || q % 10 === r % 10;
+// }
+
+// console.log(same_last_digit(22, 32, 42));
+// console.log(same_last_digit(102, 302, 2));
+// console.log(same_last_digit(20, 22, 45));
+
+// function three_numbers(x, y, z) {
+//   if (x == y && y == z) {
+//     return 30;
+//   }
+
+//   if (x == y || y == z || z == x) {
+//     return 40;
+//   }
+
+//   return 20;
+// }
+// console.log(three_numbers(8, 8, 8));
+// console.log(three_numbers(8, 8, 18));
+// console.log(three_numbers(8, 7, 18));
