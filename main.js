@@ -664,3 +664,24 @@
 // runAsync(() => 10 ** 3).then(console.log); // 1000
 // let outsideVariable = 50;
 // runAsync(() => typeof outsideVariable).then(console.log); // 'undefined'
+
+// Use Array.filter()
+// const reject = (pred, array) => array.filter((...args) => !pred(...args));
+
+// console.log(reject(x => x % 2 === 0, [1, 2, 3, 4, 5]));
+
+// console.log(reject(word => word.length > 4, ['Apple', 'Pear', 'Kiwi', 'Banana']));
+
+// Mutate Arrays
+// const pullAtValue = (arr, pullArr) => {
+//   let removed = [],
+//     pushToRemove = arr.forEach((v, i) => (pullArr.includes(v) ? removed.push(v) : v)),
+//     mutateTo = arr.filter((v, i) => !pullArr.includes(v));
+//   arr.length = 0;
+//   mutateTo.forEach(v => arr.push(v));
+//   return removed;
+// };
+// let myArray = ['a', 'b', 'c', 'd'];
+// let pulled = pullAtValue(myArray, ['b', 'd']);
+// console.log('Original data',myArray);
+// console.log('Pulled data',pulled);
