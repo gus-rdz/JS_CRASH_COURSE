@@ -686,35 +686,48 @@
 // console.log('Original data',myArray);
 // console.log('Pulled data',pulled);
 
-const runAsync = (fn) => {
-  const worker = new Worker(
-    URL.createObjectURL(new Blob([`postMessage((${fn})());`]), {
-      type: "application/javascript; charset=utf-8",
-    })
-  );
-  return new Promise((res, rej) => {
-    worker.onmessage = ({ data }) => {
-      res(data), worker.terminate();
-    };
-    worker.onerror = (err) => {
-      rej(err), worker.terminate();
-    };
-  });
-};
-const longRunningFunction = () => {
-  let result = 0;
-  for (let i = 0; i < 1000; i++) {
-    for (let j = 0; j < 700; j++) {
-      for (let k = 0; k < 300; k++) {
-        result = result + i + j + k;
-      }
-    }
-  }
-  return result;
-};
-/*
- */
-runAsync(longRunningFunction).then(console.log); // 209685000000
-runAsync(() => 10 ** 3).then(console.log); // 1000
-let outsideVariable = 50;
-runAsync(() => typeof outsideVariable).then(console.log); // 'undefined'
+// const runAsync = (fn) => {
+//   const worker = new Worker(
+//     URL.createObjectURL(new Blob([`postMessage((${fn})());`]), {
+//       type: "application/javascript; charset=utf-8",
+//     })
+//   );
+//   return new Promise((res, rej) => {
+//     worker.onmessage = ({ data }) => {
+//       res(data), worker.terminate();
+//     };
+//     worker.onerror = (err) => {
+//       rej(err), worker.terminate();
+//     };
+//   });
+// };
+// const longRunningFunction = () => {
+//   let result = 0;
+//   for (let i = 0; i < 1000; i++) {
+//     for (let j = 0; j < 700; j++) {
+//       for (let k = 0; k < 300; k++) {
+//         result = result + i + j + k;
+//       }
+//     }
+//   }
+//   return result;
+// };
+
+// runAsync(longRunningFunction).then(console.log); // 209685000000
+// runAsync(() => 10 ** 3).then(console.log); // 1000
+// let outsideVariable = 50;
+// runAsync(() => typeof outsideVariable).then(console.log); // 'undefined'
+
+// // Round specified Numbers
+// const round = (n, decimals = 0) =>
+//   Number(`${Math.round(`${n}e${decimals}`)}e-${decimals}`);
+
+// console.log(round(1.005, 2));
+// console.log(round(1.05, 2));
+// console.log(round(1.0005, 2));
+
+// // Reverse char in String
+// const reverseString = str => [...str].reverse().join('');
+
+// console.log(reverseString('php'));
+// console.log(reverseString('foobar'));
