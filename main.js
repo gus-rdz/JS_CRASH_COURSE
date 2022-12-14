@@ -731,3 +731,18 @@
 
 // console.log(reverseString('php'));
 // console.log(reverseString('foobar'));
+
+// Creates Object composed of the properties the given func returns falsey for
+// const omitBy = (obj, fn) =>
+//   Object.keys(obj)
+//     .filter((k) => !fn(obj[k], k))
+//     .reduce((acc, key) => ((acc[key] = obj[key]), acc), {});
+
+// console.log(omitBy({ a: 1, b: "2", c: 3 }, (x) => typeof x === "number"));
+
+// Filters array's values based on predictable func
+// const reject = (pred, array) => array.filter((...args) => !pred(...args));
+
+// console.log(reject(x => x % 2 === 0, [1, 2, 3, 4, 5]));
+
+// console.log(reject(word => word.length > 4, ['Apple', 'Pear', 'Kiwi', 'Banana']))
