@@ -746,3 +746,20 @@
 // console.log(reject(x => x % 2 === 0, [1, 2, 3, 4, 5]));
 
 // console.log(reject(word => word.length > 4, ['Apple', 'Pear', 'Kiwi', 'Banana']))
+
+// const fs = require('fs');
+// const readFileLines = filename =>
+//   fs
+//     .readFileSync(filename)
+//     .toString('UTF8')
+//     .split('\n');
+// /*
+// contents of test.txt :
+//   line1
+//   line2
+//   line3
+//   ___________________________
+// */
+// let arr = readFileLines('test.txt');
+
+// console.log(arr); // ['line1', 'line2', 'line3']
