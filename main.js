@@ -782,3 +782,23 @@
 // };
 // const autoPluralize = pluralize(PLURALS);
 // console.log(autoPluralize(2, 'person')); // 'people'
+
+// Calculate numbers in the given array that are less than or equal to given value
+// const percentile = (arr, num) =>
+//   (arr.filter((item) => item <= num).length / arr.length) * 100;
+// console.log(percentile([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 5)); // 50;
+// console.log(percentile([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 10)); // 100;
+// console.log(percentile([1, 2, 3, 4, 5, 6], 3)); // 50;
+// console.log(percentile([1, 2, 3, 4, 5, 6], 4)); // 66.66;
+
+// const partition = (arr, fn) =>
+//   arr.reduce(
+//     (acc, val, i, arr) => {
+//       acc[fn(val, i, arr) ? 0 : 1].push(val);
+//       return acc;
+//     },
+//     [[], []]
+//   );
+// const users = [{ user: 'barney', age: 36, active: false }, { user: 'fred', age: 40, active: true }];
+// partition(users, o => o.active);
+// console.log(users);
