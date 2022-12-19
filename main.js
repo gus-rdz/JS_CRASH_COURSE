@@ -818,3 +818,30 @@
 // pullBy(myArray, [{ x: 1 }, { x: 3 }], o => o.x);
 
 // console.log(myArray);
+
+// Return 1 if array sorted in ascending order, -1 if descending
+// const isSorted = arr => {
+//   let direction = -(arr[0] - arr[1]);
+//   for (let [i, val] of arr.entries()) {
+//     direction = !direction ? -(arr[i - 1] - arr[i]) : direction;
+//     if (i === arr.length - 1) return !direction ? 0 : direction;
+//     else if ((val - arr[i + 1]) * direction > 0) return 0;
+//   }
+// };
+// console.log(isSorted([0, 1, 2, 2]));
+// console.log(isSorted([4, 3, 2]));
+// console.log(isSorted([4, 3, 5]));
+
+// Returns true if object looks like a Promise
+// const isPromiseLike = obj =>
+//   obj !== null &&
+//   (typeof obj === 'object' || typeof obj === 'function') &&
+//   typeof obj.then === 'function';
+
+// console.log(isPromiseLike({
+//   then: function() {
+//     return '';
+//   }
+// }));
+// console.log(isPromiseLike(null));
+// console.log(isPromiseLike({}));
