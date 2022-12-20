@@ -845,3 +845,21 @@
 // }));
 // console.log(isPromiseLike(null));
 // console.log(isPromiseLike({}));
+
+// Checks whether string is lowercase or not
+// const isLowerCase = (str) => str === str.toLowerCase();
+
+// console.log(isLowerCase("abc"));
+// console.log(isLowerCase("a3@$"));
+// console.log(isLowerCase("Ab4"));
+
+// // Checks whther the specified value is null
+// const isNull = (val) => val === null;
+// console.log(isNull(null));
+// console.log(isNull(123));
+
+// // Checks if given argument is a number
+// const isNumber = val => typeof val === 'number';
+
+// console.log(isNumber('1'));
+// console.log(isNumber(1));
