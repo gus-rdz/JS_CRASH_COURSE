@@ -863,3 +863,15 @@
 
 // console.log(isNumber('1'));
 // console.log(isNumber(1));
+
+// Checks whether the provided argument is array-like
+// const isArrayLike = val => {
+//   try {
+//     return [...val], true;
+//   } catch (e) {
+//     return false;
+//   }
+// };
+// console.log(isArrayLike(document.querySelectorAll('.className'))); // true
+// console.log(isArrayLike('abc')); // true
+// console.log(isArrayLike(null)); // false
