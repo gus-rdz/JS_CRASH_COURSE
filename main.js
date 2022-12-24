@@ -891,3 +891,19 @@
 // console.log(is(Number, new Number(1)));
 // console.log(is(Boolean, true));
 // console.log(is(Boolean, new Boolean(true)));
+
+// Gets a list of elements that exist in both arrays
+// const intersection = (a, b) => {
+//   const s = new Set(b);
+//   return a.filter(x => s.has(x));
+// };
+// console.log(intersection([1, 2, 3], [4, 3, 2]));
+
+// Creates a n-dimensional array with given value
+// const initializeNDArray = (val, ...args) =>
+//   args.length === 0
+//     ? val
+//     : Array.from({ length: args[0] }).map(() => initializeNDArray(val, ...args.slice(1)));
+
+// console.log(initializeNDArray(1, 3));
+// console.log(initializeNDArray(5, 2, 2, 2));
