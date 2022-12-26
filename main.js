@@ -940,3 +940,23 @@
 // // sumForLoop` is nearly 10 times faster
 // console.log(Math.round(hz(sumReduce)));
 // console.log(Math.round(hz(sumForLoop)));
+
+// Takes a function as an argument, then makes the first argument the last.
+// const flip = fn => (first, ...rest) => fn(...rest, first);
+// let a = { name: 'John Smith' };
+// let b = {};
+// const mergeFrom = flip(Object.assign);
+// let mergePerson = mergeFrom.bind(null, a);
+// mergePerson(b); // == b
+// b = {};
+// console.log(Object.assign(b, a)); // == b
+
+// Flatten an object with the paths for keys.
+// const flattenObject = (obj, prefix = '') =>
+//   Object.keys(obj).reduce((acc, k) => {
+//     const pre = prefix.length ? prefix + '.' : '';
+//     if (typeof obj[k] === 'object') Object.assign(acc, flattenObject(obj[k], pre + k));
+//     else acc[pre + k] = obj[k];
+//     return acc;
+//   }, {});
+// console.log(flattenObject({ a: { b: { c: 1 } }, d: 1 }));
