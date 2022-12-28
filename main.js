@@ -960,3 +960,18 @@
 //     return acc;
 //   }, {});
 // console.log(flattenObject({ a: { b: { c: 1 } }, d: 1 }));
+
+// Calculate the greatest common divisor between two or more numbers/arrays
+// const gcd = (...arr) => {
+//   const _gcd = (x, y) => (!y ? x : gcd(y, x % y));
+//   return [...arr].reduce((a, b) => _gcd(a, b));
+// };
+// console.log(gcd(8, 36));
+// console.log(gcd(...[12, 8, 32]));
+
+// Get all indices of val in an array. If val never occurs, returns [].
+// const indexOfAll = (arr, val) =>
+//   arr.reduce((acc, el, i) => (el === val ? [...acc, i] : acc), []);
+
+// console.log(indexOfAll([1, 2, 3, 1, 2, 3], 1));
+// console.log(indexOfAll([1, 2, 3], 4));
