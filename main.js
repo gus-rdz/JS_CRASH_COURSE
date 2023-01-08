@@ -1098,3 +1098,19 @@
 // console.log(move([10, 20, 30, 40, 50], 0, 2));
 
 // console.log(move([10, 20, 30, 40, 50], -1, -2));
+
+// Check a given number is odd or even using bit manipulation
+// const check_even_odd = (n) => {
+//   if (typeof n != "number") {
+//     return "Parameter value must be number!";
+//   }
+//   if ((n ^ 1) == n + 1)
+//     //even
+//     return n + " is an even number.";
+//   //odd
+//   else return n + " is an odd number.";
+// };
+// console.log(check_even_odd(1));
+// console.log(check_even_odd(4));
+// console.log(check_even_odd(9));
+// console.log(check_even_odd("15"));
