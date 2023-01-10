@@ -1134,3 +1134,13 @@
 // console.log("Turning k'th bit off," + " k = " + k);
 // result_n = turn_Off_Kth_Bit(n, k);
 // console.log(result_n + " in binary is " + result_n.toString(2));
+
+// DOM Manipulation Practice - Add Rows to Table
+// function insert_Row()
+// {
+// var x=document.getElementById('sampleTable').insertRow(0);
+// var y = x.insertCell(0);
+// var z = x.insertCell(1);
+// y.innerHTML="New Cell1";
+// z.innerHTML="New Cell2";
+// }
