@@ -1865,3 +1865,24 @@
 // console.log(unique_Elements([1, 2, 2, 3, 4, 4, 5]));
 // console.log(unique_Elements([1, 2, 3, 4, 5]));
 // console.log(unique_Elements([1, -2, -2, 3, 4, -5, -6, -5]));
+
+// Program to check whether a given value is html or not
+// function is_html(str)
+// {
+//  regexp = /<([a-z]+) *[^/]*?>/;
+
+//         if (regexp.test(str))
+//           {
+//             return true;
+//           }
+//         else
+//           {
+//             return false;
+//           }
+// }
+
+// console.log(is_html(''));
+
+// console.log(is_html(''));
+
+// console.log(is_html('.selector'));
